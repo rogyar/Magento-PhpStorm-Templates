@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!--
+#parse("Variable Definitions.php")
+#parse("PHP File Header.php")
+-->
+<config>
+    <modules>
+        <Atwix_${Extension_Name}>
+            <version>0.1.0</version>
+        </Atwix_${Extension_Name}>
+    </modules>
+    <global>
+<!--
+        <blocks>
+            <${extension_alias}>
+                <class>Atwix_${Extension_Name}_Block</class>
+            </${extension_alias}>
+        </blocks>
+-->
+<!--
+    	<models>
+            <${extension_alias}>
+                <class>Atwix_${Extension_Name}_Model</class>
+            </${extension_alias}>
+        </models>
+-->
+<!--
+        <helpers>
+            <${extension_alias}>
+                <class>Atwix_${Extension_Name}_Helper</class>
+            </${extension_alias}>
+        </helpers>
+-->
+<!--
+        <resources>
+            <${extension_alias}_setup>
+                <setup>
+                    <module>Atwix_${Extension_Name}</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </${extension_alias}_setup>
+            <${extension_alias}_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </${extension_alias}_write>
+            <${extension_alias}_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </${extension_alias}_read>
+        </resources>
+-->
+    </global>
+    <frontend>
+ <!--
+        <routers>
+            <${extension_alias}>
+                <use>standard</use>
+                <args>
+                    <module>Atwix_${Extension_Name}</module>
+                    <frontName>${extension_alias}</frontName>
+                </args>
+            </${extension_alias}>
+        </routers>
+-->
+<!--
+        <translate>
+            <modules>
+                <Atwix_${Extension_Name}>
+                    <files>
+                        <default>Atwix_${Extension_Name}.csv</default>
+                    </files>
+                </Atwix_${Extension_Name}>
+            </modules>
+        </translate>
+-->
+<!--
+        <layout>
+            <updates>
+                <${extension_alias} module="Atwix_${Extension_Name}">
+                    <file>${extension_alias}.xml</file>
+                </${extension_alias}>
+            </updates>
+        </layout>
+-->
+    </frontend>
+    <admin>
+ <!--
+        <routers>
+            <${extension_alias}>
+                <use>standard</use>
+                <args>
+                    <module>Atwix_${Extension_Name}</module>
+                    <frontName>${extension_alias}</frontName>
+                </args>
+            </${extension_alias}>
+        </routers>
+-->
+    </admin>
+    <adminhtml>
+<!--
+        <translate>
+            <modules>
+                <Atwix_${Extension_Name}>
+                    <files>
+                        <default>Atwix_${Extension_Name}.csv</default>
+                    </files>
+                </Atwix_${Extension_Name}>
+            </modules>
+        </translate>
+-->
+    </adminhtml>
+
+    <default>
+<!--
+        <${extension_alias}>
+            <general>
+                <enabled>1</enabled>
+            </general>
+        </${extension_alias}>
+-->
+    </default>
+
+    <crontab>
+<!--
+        <jobs>
+            <jobname>
+                <schedule><cron_expr>*/15 * * * *</cron_expr></schedule>
+                <run><model>${extension_alias}/model_name::actionName</model></run>
+            </jobname>
+        </jobs>
+
+    </crontab>
+</config>

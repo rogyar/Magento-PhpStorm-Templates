@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+#parse("Variable Definitions.php")
+#parse("PHP File Header.php")
+-->
+<config>
+    <modules>
+        <Atwix_${Extension_Name}>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core />
+            </depends>
+        </Atwix_${Extension_Name}>
+    </modules>
+</config>
