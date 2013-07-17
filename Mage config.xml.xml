@@ -92,7 +92,7 @@
  <!--
         <routers>
             <${extension_alias}>
-                <use>standard</use>
+                <use>admin</use>
                 <args>
                     <module>Atwix_${Extension_Name}</module>
                     <frontName>${extension_alias}</frontName>
@@ -135,4 +135,5 @@
         </jobs>
 
     </crontab>
+-->
 </config>
