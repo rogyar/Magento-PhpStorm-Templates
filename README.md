@@ -15,6 +15,6 @@ Includes:
 
 #### Installation 
 
-Copy cloned contents into <username>/Library/Preferences/WebIde60/fileTemplates/
+Copy cloned contents into ~/Library/Preferences/WebIde60/fileTemplates/
 
 > WebIde60 directory in the path above depends on PhpStorm version. For PhpStorm 7 use WebIde70, PhpStorm 5 - WebIde50 etc..
