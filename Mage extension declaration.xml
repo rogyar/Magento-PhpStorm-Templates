@@ -6,12 +6,12 @@
 -->
 <config>
     <modules>
-        <Atwix_${Extension_Name}>
+        <${Extension_Name}>
             <active>true</active>
             <codePool>local</codePool>
             <depends>
                 <Mage_Core />
             </depends>
-        </Atwix_${Extension_Name}>
+        </${Extension_Name}>
     </modules>
 </config>
