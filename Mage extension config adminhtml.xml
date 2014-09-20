@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <!--
+#set ( $Global_Module_Name = ${Extension_Name} )
 #parse("Variable Definitions.php")
 #parse("PHP File Header.php")
 -->
@@ -12,9 +13,9 @@
                         <children>
                             <config>
                                 <children>
-                                    <${extension_alias} translate="title">
+                                    <${Extension_Alias} translate="title">
                                         <title>${Extension_Name} configuration</title>
-                                    </${extension_alias}>
+                                    </${Extension_Alias}>
                                 </children>
                             </config>
                         </children>

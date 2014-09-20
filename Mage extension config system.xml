@@ -7,7 +7,7 @@
 <config>
     <tabs>
         <!--
-            <atwix translate="label" module="${extension_alias}">
+            <atwix translate="label" module="${Extension_Alias}">
                 <label>Atwix Extensions</label>
                 <sort_order>350</sort_order>
             </atwix>
@@ -15,7 +15,7 @@
     </tabs>
     <sections>
         <!--
-            <${extension_alias} translate="label" module="${extension_alias}">
+            <${Extension_Alias} translate="label" module="${Extension_Alias}">
                 <class>separator-top</class>
                 <label>Atwix Extension</label>
                 <tab>atwix</tab>
@@ -116,7 +116,7 @@
                         </fields>
                     </general>
                 </groups>
-            </${extension_alias}>
+            </${Extension_Alias}>
         -->
     </sections>
 </config>

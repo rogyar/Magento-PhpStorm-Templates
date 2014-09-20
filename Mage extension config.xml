@@ -13,28 +13,28 @@
     <global>
     <!--
         <blocks>
-            <${extension_alias}>
+            <${Extension_Alias}>
                 <class>${Extension_Name}_Block</class>
-            </${extension_alias}>
+            </${Extension_Alias}>
         </blocks>
     -->
     <!--
         <models>
-            <${extension_alias}>
+            <${Extension_Alias}>
                 <class>${Extension_Name}_Model</class>
-            </${extension_alias}>
+            </${Extension_Alias}>
         </models>
     -->
     <!--
         <helpers>
-            <${extension_alias}>
+            <${Extension_Alias}>
                 <class>${Extension_Name}_Helper</class>
-            </${extension_alias}>
+            </${Extension_Alias}>
         </helpers>
     -->
     <!--
         <resources>
-            <${extension_alias}_setup>
+            <${Extension_Alias}_setup>
                 <setup>
                     <module>${Extension_Name}</module>
                     <class>Mage_Core_Model_Resource_Setup</class>
@@ -42,30 +42,30 @@
                 <connection>
                     <use>core_setup</use>
                 </connection>
-            </${extension_alias}_setup>
-            <${extension_alias}_write>
+            </${Extension_Alias}_setup>
+            <${Extension_Alias}_write>
                 <connection>
                     <use>core_write</use>
                 </connection>
-            </${extension_alias}_write>
-            <${extension_alias}_read>
+            </${Extension_Alias}_write>
+            <${Extension_Alias}_read>
                 <connection>
                     <use>core_read</use>
                 </connection>
-            </${extension_alias}_read>
+            </${Extension_Alias}_read>
         </resources>
     -->
     </global>
     <frontend>
     <!--
         <routers>
-            <${extension_alias}>
+            <${Extension_Alias}>
                 <use>standard</use>
                 <args>
                     <module>${Extension_Name}</module>
-                    <frontName>${extension_alias}</frontName>
+                    <frontName>${Extension_Alias}</frontName>
                 </args>
-            </${extension_alias}>
+            </${Extension_Alias}>
         </routers>
     -->
     <!--
@@ -82,9 +82,9 @@
     <!--
         <layout>
             <updates>
-                <${extension_alias} module="${Extension_Name}">
-                    <file>${extension_alias}.xml</file>
-                </${extension_alias}>
+                <${Extension_Alias} module="${Extension_Name}">
+                    <file>${Extension_Alias}.xml</file>
+                </${Extension_Alias}>
             </updates>
         </layout>
     -->
@@ -92,13 +92,13 @@
     <admin>
     <!--
         <routers>
-            <${extension_alias}>
+            <${Extension_Alias}>
                 <use>admin</use>
                 <args>
                     <module>${Extension_Name}</module>
-                    <frontName>${extension_alias}</frontName>
+                    <frontName>${Extension_Alias}</frontName>
                 </args>
-            </${extension_alias}>
+            </${Extension_Alias}>
         </routers>
     -->
     </admin>
@@ -117,11 +117,11 @@
     </adminhtml>
     <default>
     <!--
-        <${extension_alias}>
+        <${Extension_Alias}>
             <general>
                 <enabled>1</enabled>
             </general>
-        </${extension_alias}>
+        </${Extension_Alias}>
     -->
     </default>
     <crontab>
@@ -129,7 +129,7 @@
         <jobs>
             <jobname>
                 <schedule><cron_expr>*/15 * * * *</cron_expr></schedule>
-                <run><model>${extension_alias}/model_name::actionName</model></run>
+                <run><model>${Extension_Alias}/model_name::actionName</model></run>
             </jobname>
         </jobs>
     -->
